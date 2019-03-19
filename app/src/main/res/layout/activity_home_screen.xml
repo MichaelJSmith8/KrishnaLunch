@@ -34,7 +34,7 @@
         android:textSize="144sp" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/Tickets"
+        android:id="@+id/redeem"
         android:layout_width="284dp"
         android:layout_height="279dp"
         android:layout_gravity="center"
@@ -72,7 +72,7 @@
         app:srcCompat="@android:drawable/ic_dialog_info" />
 
     <TextView
-        android:id="@+id/redeem"
+        android:id="@+id/RedeemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -83,12 +83,23 @@
         android:textSize="36sp" />
 
     <Button
+        android:id="@+id/BuyMore"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="190dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Buy More"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
         android:id="@+id/Menu"
         android:layout_width="374dp"
         android:layout_height="72dp"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="144dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/colorAccent"
         android:text="Menu"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
@@ -98,8 +109,8 @@
         android:layout_width="374dp"
         android:layout_height="72dp"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorAccent"
         android:text="Wait Times"
         android:textColor="@android:color/white"
         android:textSize="24sp" />

@@ -9,6 +9,11 @@ import android.view.View;
 
 public class HomeScreen extends AppCompatActivity {
 
+    TextView counter;
+    Button BuyMore;
+    FloatingActionButton redeem;
+    int count;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
