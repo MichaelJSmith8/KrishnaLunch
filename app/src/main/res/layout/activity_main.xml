@@ -4,16 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -22,7 +14,67 @@
         android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+
         tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Menu"
+            android:textColor="@color/colorAccent"
+            android: android:textSize="25dp"
+            android: android:textStyle=""
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:entries="@array/array_name"
+        android:spinnerMode="dropdown"
+        android:textColor="#4AADE4"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="448dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="448dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:text="@string/currentDay"
+        android:textColor="#4AADE4"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="772dp" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="325dp"
+        android:layout_height="180dp"
+        android:text="@array/currentMenu"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+
 
 </android.support.constraint.ConstraintLayout>

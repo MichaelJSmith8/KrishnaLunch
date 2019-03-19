@@ -1,3 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
 <resources>
-    <string name="app_name">KrishnaLunch</string>
+
+
+    <string-array name="array_name">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+
+    </string-array>
+
+    <string name="currentDay">
+        Monday
+</string>
+
+    <string-array name="currentMenu">
+        <item>Rice\nChickpeas & Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea </item>
+
+
+
+
+
+
+    </string-array>
+
+
+
 </resources>
+
