@@ -35,29 +35,32 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="34dp"
 
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
         android:entries="@array/weekday"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="351dp"
-        android:layout_height="448dp"
+        android:layout_width="357dp"
+        android:layout_height="220dp"
         app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="322dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="174dp" />
 
     <TextView
         android:id="@+id/textViewMenu"
-        android:layout_width="325dp"
-        android:layout_height="211dp"
+        android:layout_width="323dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="32dp"
         android:text="@string/currentMenu"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="528dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="420dp" />
 
     <TextView
         android:id="@+id/toolbar_title"
@@ -65,12 +68,15 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Weekly Menu"
         android:textColor="@color/colorAccent"
         android:textSize="25dp"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        tools:layout_editor_absoluteY="16dp" />
 
 
 </android.support.constraint.ConstraintLayout>
