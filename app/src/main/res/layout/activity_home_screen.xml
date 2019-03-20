@@ -6,20 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".HomeScreen">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="415dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-
     <include
         android:id="@+id/include"
         layout="@layout/content_home_screen" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0082c8"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="right"
+        android:background="#0082c8"
+        android:scaleType="fitCenter"
+        android:tint="#FBAA28"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Krishna Lunch"
+        android:textColor="#FBAA28"
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_anchor="@+id/toolbar2"
+        app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/counter"
@@ -38,17 +67,8 @@
         android:layout_width="284dp"
         android:layout_height="279dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="56dp" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="4dp"
-        android:text="Krishna Lunch"
-        android:textColor="@android:color/white"
-        android:textSize="36sp" />
+        android:layout_marginBottom="56dp"
+        app:backgroundTint="#FBAA28" />
 
     <TextView
         android:id="@+id/Remaining"
@@ -61,16 +81,6 @@
         android:textColor="@android:color/black"
         android:textSize="36sp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/account"
-        android:layout_width="45dp"
-        android:layout_height="44dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
-
     <TextView
         android:id="@+id/RedeemText"
         android:layout_width="wrap_content"
@@ -79,7 +89,7 @@
         android:layout_marginTop="96dp"
         android:elevation="30dp"
         android:text="Redeem"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="36sp" />
 
     <Button
@@ -88,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="190dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="#0082c8"
         android:text="Buy More"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
@@ -99,9 +109,9 @@
         android:layout_height="72dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="108dp"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="#FBAA28"
         android:text="Menu"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <Button
@@ -110,9 +120,9 @@
         android:layout_height="72dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="#FBAA28"
         android:text="Wait Times"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
 </android.support.design.widget.CoordinatorLayout>
