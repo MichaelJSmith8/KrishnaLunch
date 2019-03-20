@@ -23,9 +23,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Line Lengths"
+            android:text="Wait Times"
             android:textColor="@color/colorAccent"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="11dp" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -69,7 +71,7 @@
         android:scaleType="fitCenter"
         android:tint="@color/colorAccent"
         app:srcCompat="@drawable/usericon"
-        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteX="356dp"
         tools:layout_editor_absoluteY="0dp" />
 
 
