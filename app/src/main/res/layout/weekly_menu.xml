@@ -15,20 +15,8 @@
 
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="0dp">
-
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:text="Weekly Menu"
-            android:textColor="@color/colorAccent"
-            android:textSize="25dp"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="11dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
 
     </android.support.v7.widget.Toolbar>
 
@@ -42,7 +30,7 @@
         android:scaleType="fitCenter"
         android:tint="@color/colorAccent"
         app:srcCompat="@drawable/usericon"
-        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteX="352dp"
         tools:layout_editor_absoluteY="1dp" />
 
     <Spinner
@@ -59,8 +47,8 @@
         android:layout_width="351dp"
         android:layout_height="448dp"
         app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="322dp" />
 
     <TextView
         android:id="@+id/textViewMenu"
@@ -70,6 +58,19 @@
         android:textSize="20dp"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="528dp" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Weekly Menu"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="484dp" />
 
 
 </android.support.constraint.ConstraintLayout>
