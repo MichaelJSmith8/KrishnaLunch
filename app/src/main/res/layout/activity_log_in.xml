@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebf6fc"
+    tools:context=".LogIn">
+
+    <ImageView
+        android:id="@+id/KrishnaLogo"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/krishna_logo" />
+
+    <TextView
+        android:id="@+id/UsernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="15dp"
+        android:layout_below="@id/KrishnaLogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/UsernameTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UsernameTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/PasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15dp"
+        android:layout_below="@id/UsernameTxtBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/PasswordTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/LogInBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordTxtBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="#062c40"
+        android:textColor="#fff"
+        android:text="Log-In" />
+
+    <TextView
+        android:id="@+id/SignUpInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_below="@id/LogInBtn"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"/>
+</RelativeLayout>

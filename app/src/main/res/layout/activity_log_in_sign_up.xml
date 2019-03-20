@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebf6fc"
+    tools:context=".LogInSignUpActivity">
+
+    <ImageView
+        android:id="@+id/KrishnaLogo"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/krishna_logo" />
+
+    <Button
+        android:id="@+id/LogInBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/KrishnaLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="#062c40"
+        android:textColor="#fff"
+        android:text="Log-In" />
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LogInBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#062c40"
+        android:textColor="#fff"
+        android:text="Sign UP" />
+
+
+</RelativeLayout>
