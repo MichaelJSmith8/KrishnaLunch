@@ -23,8 +23,7 @@
             android:layout_height="wrap_content"
             android:text="Weekly Menu"
             android:textColor="@color/colorAccent"
-            android: android:textSize="25dp"
-            android: android:textStyle=""
+            android:textSize="25dp"
             android:layout_gravity="center"
             android:id="@+id/toolbar_title" />
 
@@ -57,16 +56,6 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/textViewDay"
-        android:layout_width="130dp"
-        android:layout_height="49dp"
-        android:text="@string/currentDay"
-        android:textColor="#4AADE4"
-        android:textSize="35dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="772dp" />
-
-    <TextView
         android:id="@+id/textViewMenu"
         android:layout_width="325dp"
         android:layout_height="180dp"
@@ -75,6 +64,17 @@
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="503dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@drawable/usericon"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </android.support.constraint.ConstraintLayout>
