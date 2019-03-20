@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line Lengths"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:entries="@array/weekday"
+        android:spinnerMode="dropdown"
+        android:textColor="#4AADE4"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="384dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="476dp"
+        app:srcCompat="@drawable/linelength"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="325dp"
+        android:layout_height="180dp"
+        android:text="Hours: 11am - 1:30pm"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@drawable/usericon"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>

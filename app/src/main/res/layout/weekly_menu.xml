@@ -9,60 +9,29 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
+
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
             android:text="Weekly Menu"
             android:textColor="@color/colorAccent"
             android:textSize="25dp"
-            android:layout_gravity="center"
-            android:id="@+id/toolbar_title" />
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="11dp" />
 
     </android.support.v7.widget.Toolbar>
 
-
-
-
-
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="174dp"
-        android:layout_height="55dp"
-        android:entries="@array/array_name"
-        android:spinnerMode="dropdown"
-        android:textColor="#4AADE4"
-        android:textSize="35dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="448dp"
-
-        />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="351dp"
-        android:layout_height="448dp"
-        app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/textViewMenu"
-        android:layout_width="325dp"
-        android:layout_height="180dp"
-        android:text="@array/currentMenu"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="503dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -74,7 +43,33 @@
         android:tint="@color/colorAccent"
         app:srcCompat="@drawable/usericon"
         tools:layout_editor_absoluteX="336dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/weekday"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="448dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="325dp"
+        android:layout_height="211dp"
+        android:text="@string/currentMenu"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="528dp" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -6,7 +6,7 @@
 <resources>
 
 
-    <string-array name="array_name">
+    <string-array name="weekday">
         <item>Monday</item>
         <item>Tuesday</item>
         <item>Wednesday</item>
@@ -19,15 +19,14 @@
         Monday
 </string>
 
-    <string-array name="currentMenu">
-        <item>Rice\nChickpeas and Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea </item>
+    <string name="currentMenu">Rice\nChickpeas and Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea
 
 
 
 
 
 
-    </string-array>
+    </string>
 
 
 
