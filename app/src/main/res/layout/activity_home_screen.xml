@@ -24,12 +24,13 @@
     </android.support.v7.widget.Toolbar>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/account"
         android:layout_width="59dp"
         android:layout_height="54dp"
+        android:layout_gravity="end"
         android:adjustViewBounds="true"
-        android:layout_gravity="right"
         android:background="#0082c8"
+        android:contentDescription="user icon"
         android:scaleType="fitCenter"
         android:tint="#FBAA28"
         app:srcCompat="@drawable/usericon" />
@@ -64,18 +65,18 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/redeem"
-        android:layout_width="284dp"
-        android:layout_height="279dp"
+        android:layout_width="264dp"
+        android:layout_height="264dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="64dp"
         app:backgroundTint="#FBAA28" />
 
     <TextView
         android:id="@+id/Remaining"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="480dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="84dp"
         android:text="Tickets Remaining:"
         android:textAlignment="center"
         android:textColor="@android:color/black"
@@ -97,7 +98,7 @@
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="#0082c8"
         android:text="Buy More"
         android:textColor="@android:color/white"
