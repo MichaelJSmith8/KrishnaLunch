@@ -54,7 +54,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/textViewMenu"
+        android:id="@+id/textViewHours"
         android:layout_width="325dp"
         android:layout_height="180dp"
         android:text="Hours: 11am - 1:30pm"
@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteY="503dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/accountButton"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:adjustViewBounds="true"

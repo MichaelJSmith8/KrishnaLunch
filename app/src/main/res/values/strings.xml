@@ -19,14 +19,10 @@
         Monday
 </string>
 
-    <string name="currentMenu">Rice\nChickpeas and Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea
 
-
-
-
-
-
-    </string>
+    <string-array name="menuTextArray">
+    <item>Rice\nChickpeas and Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea</item>
+    </string-array>
 
 
 
