@@ -127,7 +127,7 @@ public class HomeScreen extends AppCompatActivity {
             AlertDialog.Builder redeemBuilder = new AlertDialog.Builder(context);
             redeemBuilder.setCancelable(true);
             redeemBuilder.setTitle("No tickets available");
-            redeemBuilder.setMessage("You do not have any tickets to redeem");
+            redeemBuilder.setMessage("You do not have any tickets to redeem. :( You can buy more by clicking the button on the home screen!");
             redeemBuilder.setPositiveButton("Cancel",
                     new DialogInterface.OnClickListener() {
                         @Override
