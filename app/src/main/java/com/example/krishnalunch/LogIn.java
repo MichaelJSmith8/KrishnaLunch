@@ -15,6 +15,7 @@ public class LogIn extends AppCompatActivity {
 
     ImageView KrishnaLogo;
     TextView DirectToSignUpText;
+    Button LogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,15 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LogInSignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LogIn = (Button)findViewById(R.id.LogInBtn);
+        LogIn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                 startActivity(intent);
             }
         });
