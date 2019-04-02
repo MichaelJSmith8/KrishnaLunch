@@ -19,6 +19,9 @@
     </android.support.v7.widget.Toolbar>
 
 
+
+
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="153dp"
@@ -26,7 +29,7 @@
         android:layout_below="@+id/menuImage"
         android:layout_marginStart="32dp"
         android:layout_marginTop="-20dp"
-        android:entries="@array/weekday" />
+        />
 
 
 
@@ -37,8 +40,10 @@
         android:layout_marginStart="32dp"
         android:layout_below="@+id/spinner"
         android:layout_marginTop="20dp"
-        android:text="@array/menuTextArray"
         android:textSize="20dp" />
+
+
+
 
     <TextView
         android:id="@+id/toolbar_title"
