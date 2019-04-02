@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0082c8"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/account"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_gravity="end"
+        android:adjustViewBounds="true"
+        android:background="#0082c8"
+        android:contentDescription="user icon"
+        android:scaleType="fitCenter"
+        android:tint="#FBAA28"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Krishna Lunch"
+        android:textColor="#FBAA28"
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_anchor="@+id/toolbar2"
+        app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="128dp"
+        android:elevation="30dp"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="144sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/redeem"
+        android:layout_width="264dp"
+        android:layout_height="264dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="64dp"
+        app:backgroundTint="#FBAA28" />
+
+    <TextView
+        android:id="@+id/Remaining"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="84dp"
+        android:text="Tickets Remaining:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/RedeemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:elevation="30dp"
+        android:text="Redeem"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/BuyMore"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#0082c8"
+        android:text="Buy More"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#FBAA28"
+        android:text="Menu"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/WaitTimes"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FBAA28"
+        android:text="Wait Times"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+</android.support.design.widget.CoordinatorLayout>

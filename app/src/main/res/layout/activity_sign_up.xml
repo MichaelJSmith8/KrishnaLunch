@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebf6fc"
+    tools:context=".SignUp">
+
+    <TextView
+       android:id="@+id/SignUpTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Create A New Account"
+       android:layout_centerHorizontal="true"
+       android:textSize="20dp"
+       android:layout_marginTop="32dp"
+       android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/FullNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="15dp"
+        android:layout_below="@id/SignUpTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/FullNameTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FullNameTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/UsernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="15dp"
+        android:layout_below="@id/FullNameTxtBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/UsernameTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UsernameTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/PasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15dp"
+        android:layout_below="@id/UsernameTxtBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/PasswordTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/ConfirmPasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textSize="15dp"
+        android:layout_below="@id/PasswordTxtBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/ConfirmPasswordTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ConfirmPasswordTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/EmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15dp"
+        android:layout_below="@id/ConfirmPasswordTxtBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/EmailTxtBox"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailTitle"
+        android:layout_marginLeft="16dp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/CreateAccountBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/EmailTxtBox"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account"
+        android:textColor="#fff"
+        android:background="#062c40"/>
+
+    <TextView
+        android:id="@+id/LogInInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account? Log-In"
+        android:textSize="15dp"
+        android:layout_below="@id/CreateAccountBtn"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/KrishnaLogo"
+        android:layout_width="match_parent"
+        android:layout_below="@id/LogInInfoTxt"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/krishna_logo" />
+
+</RelativeLayout>
