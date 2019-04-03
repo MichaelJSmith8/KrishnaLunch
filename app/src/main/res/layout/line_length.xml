@@ -47,34 +47,47 @@
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/bar_graph"
-        android:layout_marginTop="75dp"
         android:layout_width="match_parent"
+        android:layout_height="200dip"
         android:layout_below="@+id/toolbar"
-        android:layout_height="200dip" />
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="174dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="174dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginStart="32dp"-->
+        <!--android:layout_below="@+id/bar_graph"-->
+        <!--android:entries="@array/weekday"-->
+        <!--android:spinnerMode="dropdown"-->
+
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/liveText"
+        android:layout_width="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_below="@+id/bar_graph"
-        android:entries="@array/weekday"
-        android:spinnerMode="dropdown"
-
-        />
-
-
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        android:text="LIVE"
+        android:textColor="#FF0000"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textViewHours"
         android:layout_width="325dp"
         android:layout_marginStart="32dp"
-        android:layout_below="@+id/spinner"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bar_graph"
+        android:layout_marginTop="80dp"
         android:layout_height="180dp"
-        android:text="Hours M-F: 11am - 1:30pm"
+        android:text="Hours M-F: \n11am - 1:30pm"
         android:textSize="20dp" />
+
+
 
 
 
