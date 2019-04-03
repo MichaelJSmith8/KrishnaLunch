@@ -2,6 +2,7 @@ package com.example.krishnalunch;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,8 @@ public class HomeScreen extends AppCompatActivity {
     Context context = this;
     TextView counter;
     Button BuyMore;
+    Button Menu;
+    Button WaitTimes;
     FloatingActionButton redeem;
     int count = 0;
 
@@ -66,6 +69,8 @@ public class HomeScreen extends AppCompatActivity {
         counter = findViewById(R.id.counter);
         initCount();
         BuyMore = findViewById(R.id.BuyMore);
+        Menu = findViewById(R.id.Menu);
+        WaitTimes = findViewById(R.id.WaitTimes);
         BuyMore.setOnClickListener(listener);
 
         redeem = findViewById(R.id.redeem);
@@ -91,6 +96,20 @@ public class HomeScreen extends AppCompatActivity {
 
                 AlertDialog redeemDialog = redeemBuilder.create();
                 redeemDialog.show();
+            }
+        });
+        Menu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), WeeklyMenu.class);
+                startActivity(intent);
+            }
+        });
+        WaitTimes.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LineLength.class);
+                startActivity(intent);
             }
         });
     }
