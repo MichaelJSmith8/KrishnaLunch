@@ -2,7 +2,6 @@ package com.example.krishnalunch;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +17,6 @@ public class HomeScreen extends AppCompatActivity {
     Context context = this;
     TextView counter;
     Button BuyMore;
-    Button Menu;
     FloatingActionButton redeem;
     int count = 0;
 
@@ -68,7 +66,6 @@ public class HomeScreen extends AppCompatActivity {
         counter = findViewById(R.id.counter);
         initCount();
         BuyMore = findViewById(R.id.BuyMore);
-        Menu = findViewById(R.id.Menu);
         BuyMore.setOnClickListener(listener);
 
         redeem = findViewById(R.id.redeem);
@@ -91,33 +88,6 @@ public class HomeScreen extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                     }
                 });
-                Menu.setOnClickListener(new View.OnClickListener(){
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(getApplicationContext(), WeeklyMenu.class);
-                        startActivity(intent);
-                    }
-                });
-                redeem.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        AlertDialog.Builder redeemBuilder = new AlertDialog.Builder(context);
-                        redeemBuilder.setCancelable(true);
-                        redeemBuilder.setTitle("Redeem Ticket");
-                        redeemBuilder.setMessage("Are you sure you want to redeem a ticket? This action can't be undone.");
-                        redeemBuilder.setPositiveButton("Confirm",
-                                new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        redeemTicket();
-                                    }
-                                });
-                        redeemBuilder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        });
-
 
                 AlertDialog redeemDialog = redeemBuilder.create();
                 redeemDialog.show();

@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">KrishnaLunch</string>
+    <string-array name="weekday">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+
+    </string-array>
+
+    <string name="currentDay">
+        Monday
+</string>
+
+
+    <string-array name="menuTextArray">
+        <item>Rice\nChickpeas and Potatoes in Tomato Masala\nSalad + Almond Dressing\nApple Cinnamon Halava (Dessert)\nTea</item>
+    </string-array>
+
+    <string name="accountName">
+        John Doe
+    </string>
+
+    <string name="accountEmail">
+        johndoe@gmail.com
+    </string>
+
+    <string name="cardInfo">
+        xxxx-xxxx-xxxx-1234
+    </string>
+
+
+    <string name="passInfo">
+        ************
+    </string>
+
+    <string name="usernameInfo">
+        coolcucumber123
+    </string>
+
 </resources>
