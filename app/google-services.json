@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "220047813002",
+    "firebase_url": "https://krishna-lunch-667af.firebaseio.com",
+    "project_id": "krishna-lunch-667af",
+    "storage_bucket": "krishna-lunch-667af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220047813002:android:9082d0e3f9436eac",
+        "android_client_info": {
+          "package_name": "com.example.krishnalunch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220047813002-hmc18jrcjb5ei16vgo28pqrvmfpqgae6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdOFsv5dFZDUgv5GthY_cJcTOi_cXYRLE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
