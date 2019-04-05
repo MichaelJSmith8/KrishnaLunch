@@ -49,7 +49,7 @@ public class SignUp extends AppCompatActivity {
         DirectToLogInText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LogIn.class);
+                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                 startActivity(intent);
             }
         });

@@ -23,6 +23,7 @@
         <activity android:name=".SignUp"/>
         <activity android:name=".LineLength"/>
         <activity android:name=".LogInSignUpActivity"/>
+        <activity android:name=".Account"/>
     </application>
 
 </manifest>

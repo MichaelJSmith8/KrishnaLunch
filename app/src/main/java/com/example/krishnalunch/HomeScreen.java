@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Button;
 import android.app.AlertDialog;
@@ -20,6 +21,7 @@ public class HomeScreen extends AppCompatActivity {
     Button BuyMore;
     Button Menu;
     Button WaitTimes;
+    ImageButton account;
     FloatingActionButton redeem;
     int count = 0;
 
@@ -70,6 +72,7 @@ public class HomeScreen extends AppCompatActivity {
         initCount();
         BuyMore = findViewById(R.id.BuyMore);
         Menu = findViewById(R.id.Menu);
+        account = findViewById(R.id.account);
         WaitTimes = findViewById(R.id.WaitTimes);
         BuyMore.setOnClickListener(listener);
 
@@ -109,6 +112,13 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LineLength.class);
+                startActivity(intent);
+            }
+        });
+        account.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Account.class);
                 startActivity(intent);
             }
         });
