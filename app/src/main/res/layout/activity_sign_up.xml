@@ -115,7 +115,7 @@
         android:layout_below="@id/EmailTxtBox"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:text="Create Account"
+        android:text="Next"
         android:textColor="#fff"
         android:background="#062c40"/>
 
@@ -127,15 +127,23 @@
         android:text="Already have an account? Log-In"
         android:textSize="15dp"
         android:layout_below="@id/CreateAccountBtn"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginLeft="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/SignUpProgress"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/CreateAccountBtn"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"/>
 
     <ImageView
         android:id="@+id/KrishnaLogo"
         android:layout_width="match_parent"
         android:layout_below="@id/LogInInfoTxt"
-        android:layout_height="194dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="16dp"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/krishna_logo" />
