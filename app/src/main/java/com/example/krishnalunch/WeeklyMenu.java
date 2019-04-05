@@ -8,6 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.jjoe64.graphview.series.BarGraphSeries;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
 
 import java.util.Calendar;
 
@@ -135,4 +138,7 @@ public class WeeklyMenu extends AppCompatActivity implements AdapterView.OnItemS
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
+
 }
