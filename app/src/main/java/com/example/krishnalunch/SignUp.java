@@ -104,7 +104,7 @@ public class SignUp extends Authentification {
                         if (task.isSuccessful()) {
                             FirebaseUser user = FireAuth.getCurrentUser();
                             Toast.makeText(getApplicationContext(), "Account Creation Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                             startActivity(intent);
                             //Update UI
                         } else {

@@ -97,7 +97,7 @@ public class LogIn extends Authentification {
                             FirebaseUser user = fireAuth.getCurrentUser();
                             Toast.makeText(LogIn.this, "Log In Successful.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                             startActivity(intent);
                             //updateUI
                         } else {
